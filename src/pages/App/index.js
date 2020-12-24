@@ -4,8 +4,7 @@ import Register from '../Register';
 
 const App = () => {
   return (
-      // <Routes />
-      <Register />
+      <Routes />
   )
 }
 

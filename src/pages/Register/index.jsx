@@ -1,4 +1,4 @@
-import { Button, Grid, Card, TextField, FormControl, makeStyles } from '@material-ui/core';
+import { Button, Grid, Card, TextField, FormControl, makeStyles, Icon } from '@material-ui/core';
 import React, {Fragment} from 'react';
 
 const useStyles = makeStyles((theme) => ({
@@ -30,7 +30,9 @@ const Register = () => {
                         <div className={classes.form_login}>
                             <h2 style={
                                 {textAlign: 'center', fontSize: 26}
-                            }>Registrasi</h2>
+                            }>
+                                Registrasi
+                            </h2>
                             <form className={classes.root} autoComplete="off">
                                 <FormControl fullWidth className={classes.mb}>
                                     <TextField type="email" id="standard-basic" required={true} label="Email" />
@@ -42,7 +44,7 @@ const Register = () => {
                                     <TextField type="password" id="standard-basic" required={true} label="Konfirmasi Password" />
                                 </FormControl>
                                 <Button variant="contained" size="small" style={{marginRight: 4}} color="secondary">Kembali</Button>
-                                <Button variant="contained" size="small" color="primary">Registrasi</Button>
+                                <Button variant="contained" size="small" endIcon={<Icon>send</Icon>} color="primary">Registrasi</Button>
                             </form>
                         </div>
                     </Card>
