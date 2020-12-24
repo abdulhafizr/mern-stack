@@ -7,11 +7,19 @@ const useStyles = makeStyles((theme) => ({
     root: {
         height: '100vh',
         spacing: 0,
+        overFlow: 'hidden'
+    },
+    bg_register: {
+        position: 'absolute',
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
         background: `url(${register_bg})`,
         backgroundRepeat: 'no-repeat',
-        backdropFilter: 'blur(1px)',
         backgroundSize: 'cover',
-        overFlow: 'hidden'
+        filter: 'blur(2px)',
+        zIndex: -99
     },
     form_login: {
         background: '#fff',
@@ -29,6 +37,7 @@ const Register = () => {
     const classes = useStyles();
     return (
         <Grid container justify="flex-end" alignItems="center" className={classes.root}>
+            <div className={classes.bg_register}></div>
             <Grid item sm={6} md={4}>
                 <Card className={classes.m}>
                     <div className={classes.form_login}>
