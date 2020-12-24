@@ -1,12 +1,11 @@
 import React from 'react'
-import {Container} from '@material-ui/core';
 import { Routes } from '../../config';
+import Register from '../Register';
 
 const App = () => {
   return (
-    <Container>
-      <Routes />
-    </Container>
+      // <Routes />
+      <Register />
   )
 }
 
