@@ -1,5 +1,6 @@
 import { Button, Container, Grid } from '@material-ui/core';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Blog } from '../../components/molecules';
 import useStyles from './useStyles';
 
@@ -11,7 +12,9 @@ const Home = () => {
                 <h2>All Blog</h2>
                 <div>
                     <Button variant="contained" color="primary">
-                        Add Blog
+                        <Link to="/create-blog" className={classes.create}>
+                            Add Blog
+                        </Link>
                     </Button>
                 </div>
             </div>
@@ -39,4 +42,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;

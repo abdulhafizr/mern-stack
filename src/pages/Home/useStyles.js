@@ -16,6 +16,10 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         marginTop: 8,
         marginBottom: 4
+    },
+    create: {
+        textDecoration: 'none',
+        color: '#fff'
     }
 }))
 

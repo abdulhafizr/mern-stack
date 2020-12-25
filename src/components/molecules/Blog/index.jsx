@@ -6,7 +6,7 @@ import {blog_image} from '../../../assets';
 const Blog = () => {
     const classes = useStyles();
     return (
-        <Grid item sm="12" md="3">
+        <Grid item xs={12} sm={6} md={4} lg={3}>
             <Card>
                 <CardActionArea>
                     <CardMedia
@@ -14,8 +14,11 @@ const Blog = () => {
                         image={blog_image}
                     />
                     <CardContent>
-                        <Typography variant="h6">
+                        <Typography variant="body1">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, facilis?
+                        </Typography>
+                        <Typography variant="caption" color="primary">
+                            author : <span className={classes.author}>abdul hafiz ramadan</span>
                         </Typography>
                     </CardContent>
                 </CardActionArea>    

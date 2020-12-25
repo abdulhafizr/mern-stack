@@ -5,6 +5,10 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center'
+    },
+    brand: {
+        textDecoration: 'none',
+        color: '#fff'
     }
 }))
 

@@ -13,6 +13,10 @@ const useStyles = makeStyles((theme) => ({
     },
     link: {
         color: '#fff'
+    },
+    brand: {
+        textDecoration: 'none',
+        color: '#fff'
     }
 }))
 
