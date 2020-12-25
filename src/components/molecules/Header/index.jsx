@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <AppBar position="static">
             <Toolbar variant="dense" className={classes.root}>
-                <Typography variant="h7">
+                <Typography variant="h6">
                     AHR Blog
                 </Typography>
                 <div className={classes.side_menu}>

@@ -7,7 +7,7 @@ const Footer = () => {
     const classes = useStyles();
     return (
         <AppBar position="static">
-            <Toolbar className={classes.root}>
+            <Toolbar variant="dense" className={classes.root}>
                 <Typography variant="h5">
                     AHR
                 </Typography>
