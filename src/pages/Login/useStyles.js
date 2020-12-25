@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         background: `url(${login_bg})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        filter: 'blur(2px)',
+        // filter: 'blur(2px)',
         zIndex: -99
     },
     form_login: {

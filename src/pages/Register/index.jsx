@@ -1,5 +1,6 @@
-import {Grid, Card, FormControl, TextField, Button, Icon, makeStyles} from '@material-ui/core';
+import {Grid, Card, FormControl, TextField, Button, Icon} from '@material-ui/core';
 import React from 'react';
+import Particles from 'react-particles-js';
 import { Link } from 'react-router-dom';
 import useStyles from './useStyle';
 
@@ -7,7 +8,9 @@ const Register = () => {
     const classes = useStyles();
     return (
         <Grid container justify="flex-end" alignItems="center" className={classes.root}>
-            <div className={classes.bg_register}></div>
+            <div className={classes.bg_register}>
+                <Particles />
+            </div>
             <Grid item sm={6} md={4}>
                 <Card className={classes.m}>
                     <div className={classes.form_login}>

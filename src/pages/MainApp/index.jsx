@@ -3,13 +3,15 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from '../Home';
 import CreateBlog from '../CreateBlog';
 import DetailBlog from '../DetailBlog';
-import { Header } from '../../components';
+import { Footer, Header } from '../../components';
+import './index.css';
 
 const MainApp = () => {
     return (
         <Router>
-            <div>
+            <div className="app">
                 <Header />
+                <div className="content">
                 <Switch>
                     <Route path="/create-blog">
                         <CreateBlog />
@@ -21,7 +23,8 @@ const MainApp = () => {
                         <Home />
                     </Route>
                 </Switch>
-                <h1>Footer</h1>
+                </div>
+                <Footer />
             </div>
         </Router>
     )

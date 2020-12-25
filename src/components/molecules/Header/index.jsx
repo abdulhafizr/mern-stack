@@ -1,7 +1,7 @@
 import { AppBar, Toolbar, Typography, IconButton } from '@material-ui/core';
 import { AccountCircle } from '@material-ui/icons';
 import React, {useState} from 'react'
-import useStyles from './style';
+import useStyles from './useStyles';
 
 const Header = () => {
     const [auth, setAuth] = useState(true)

@@ -2,13 +2,16 @@ import React from 'react'
 import {Grid, Card, FormControl, TextField, Button, Icon} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import useStyles from './useStyles';
+import Particles from 'react-particles-js';
 
 
 const Login = () => {
     const classes = useStyles();
     return (
         <Grid container justify="flex-end" alignItems="center" className={classes.root}>
-            <div className={classes.bg_login}></div>
+            <div className={classes.bg_login}>
+                <Particles />
+            </div>
             <Grid item sm={6} md={4}>
                 <Card className={classes.m}>
                     <div className={classes.form_login}>
