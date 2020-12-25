@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from '../Home';
 import CreateBlog from '../CreateBlog';
 import DetailBlog from '../DetailBlog';
+import { Header } from '../../components';
 
 const MainApp = () => {
     return (
         <Router>
             <div>
-                <h1>Header</h1>
+                <Header />
                 <Switch>
                     <Route path="/create-blog">
                         <CreateBlog />
