@@ -1,12 +1,14 @@
 import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import useStyles from './useStyles';
+import {useHistory} from 'react-router-dom';
 import {blog_image} from '../../../assets';
 
 const Blog = () => {
+    const history = useHistory();
     const classes = useStyles();
     return (
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Grid item xs={12} sm={6} md={4} lg={3} onClick={() => history.push('/detail-blog')}>
             <Card>
                 <CardActionArea>
                     <CardMedia

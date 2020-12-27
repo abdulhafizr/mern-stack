@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, Typography, IconButton } from '@material-ui/core';
 import { AccountCircle } from '@material-ui/icons';
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import useStyles from './useStyles';
 
@@ -18,16 +18,18 @@ const Header = () => {
                 <div className={classes.side_menu}>
                     {
                         auth && (
-                            <IconButton
-                                aria-label="account of current user"
-                                aria-controls="menu-appbar"
-                                aria-haspopup="true"
-                                color="inherit"
-                            >
-                                <AccountCircle />
-                            </IconButton>
+                            <Link to="/login" className={classes.brand}>
+                                <IconButton 
+                                    aria-label="account of current user"
+                                    aria-controls="menu-appbar"
+                                    aria-haspopup="true"
+                                    color="inherit"
+                                >
+                                    <AccountCircle />
+                                </IconButton>
+                            </Link>
                         )
-                    }
+                    } 
                 </div>
             </Toolbar>
         </AppBar>

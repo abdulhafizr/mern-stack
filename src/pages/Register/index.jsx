@@ -21,12 +21,9 @@ const Register = () => {
                         </h2>
                         <form autoComplete="off">
                             <FormControl fullWidth className={classes.mb}>
+                                <TextField type="text" name="name" id="name" required={true} label="Nama" />
                                 <TextField type="email" name="email" id="email" required={true} label="Email" />
-                            </FormControl>
-                            <FormControl fullWidth className={classes.mb}>
                                 <TextField type="password" name="password" id="password" required={true} label="Password" />
-                            </FormControl>
-                            <FormControl fullWidth className={classes.mb}>
                                 <TextField type="password" name="password2" id="password2" required={true} label="Konfirmasi Password" />
                             </FormControl>
                             <div>

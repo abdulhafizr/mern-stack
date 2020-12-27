@@ -5,25 +5,33 @@ import CreateBlog from '../CreateBlog';
 import DetailBlog from '../DetailBlog';
 import { Footer, Header } from '../../components';
 import './index.css';
+import Register from '../Register';
+import Login from '../Login';
 
 const MainApp = () => {
     return (
         <Router>
             <div className="app">
                 <Header />
-                <div className="content">
-                <Switch>
-                    <Route path="/create-blog">
-                        <CreateBlog />
-                    </Route>
-                    <Route path="/detail-blog">
-                        <DetailBlog />
-                    </Route>
-                    <Route path="/">
-                        <Home />
-                    </Route>
-                </Switch>
-                </div>
+                    <Switch>
+                    <div className="content">
+                        <Route path="/create-blog">
+                            <CreateBlog />
+                        </Route>
+                        <Route path="/detail-blog">
+                            <DetailBlog />
+                        </Route>
+                        <Route path="/register">
+                            <Register />
+                        </Route>
+                        <Route path="/login">
+                            <Login />
+                        </Route>
+                        <Route exact path="/">
+                            <Home />
+                        </Route>
+                    </div>
+                    </Switch>
                 <Footer />
             </div>
         </Router>
